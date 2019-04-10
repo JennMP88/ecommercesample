@@ -19,8 +19,15 @@ class App extends React.Component {
   render() {
     // console.log(this.state);
     return (
-      <>
-            <h1>hello world bla bla bla bla</h1>
+      <>   
+      <h1>ZAPATOS</h1>
+        <div className='container row'> 
+            <div className='col-4 '>  {/* 1/3 of my screen */}
+                <img src={this.state.products[0].image} alt=''/>
+                <h4>{this.state.products[0].name}</h4>
+                <h5>{this.state.products[0].price}</h5>
+            </div>
+        </div>
       </>
     )
   }
